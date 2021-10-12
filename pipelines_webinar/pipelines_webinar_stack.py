@@ -12,7 +12,7 @@ class PipelinesWebinarStack(core.Stack):
         # The code that defines your stack goes here
          # https://docs.aws.amazon.com/cdk/api/latest/python/aws_cdk.aws_ec2/Vpc.html
         vpc = ec2.Vpc(
-                self, "MyVpc-cdk",
+                self, "MyVpc",
                 cidr="10.13.0.0/21",
                 max_azs=2,
                 nat_gateways=0,
